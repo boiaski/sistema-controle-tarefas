@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Controle de Tarefas</h1>
+
+        <form id="tarefaForm">
+            <input type="text" id="nomeTarefa" placeholder="Digite o nome da tarefa" required />
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <h2>Tarefas Pendentes</h2>
+        <ul id="tarefasPendentes">
+        </ul>
+
+        <h2>Tarefas Concluídas</h2>
+        <ul id="tarefasConcluidas">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
