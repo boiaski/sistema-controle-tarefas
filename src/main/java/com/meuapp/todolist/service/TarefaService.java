@@ -24,6 +24,10 @@ public class TarefaService {
         return tarefaRepository.findByConcluidaFalse();
     }
 
+    public List<Tarefa> listarTarefasConcluidas() {
+        return tarefaRepository.findByConcluidaTrue();
+    }
+
     public Tarefa marcarComoConcluida(Long id) {
         Tarefa tarefa = tarefaRepository.findById(id).orElseThrow();
         tarefa.setConcluida(true);

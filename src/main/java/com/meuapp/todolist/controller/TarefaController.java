@@ -31,6 +31,11 @@ public class TarefaController {
         return tarefaService.listarTarefasPendentes();
     }
 
+    @GetMapping("/concluidas")
+    public List<Tarefa> listarTarefasConcluidas() {
+        return tarefaService.listarTarefasConcluidas();
+    }
+
     @PostMapping("/{id}/concluir")
     public Tarefa concluirTarefa(@PathVariable Long id) {
         return tarefaService.marcarComoConcluida(id);
