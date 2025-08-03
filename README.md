@@ -135,5 +135,3 @@ Para usar outro banco (ex: PostgreSQL), altere as propriedades acima conforme ne
 Este projeto é livre para uso educacional e pessoal.
 
 ---
-
-**Dúvidas ou sugestões? Abra uma issue ou entre em
